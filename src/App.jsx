@@ -1,12 +1,13 @@
+import React from "react";
 import "./App.css";
-import products from "./data/products";
-import GroceriesAppContainer from "./Components/GroceriesAppContainer";
+import ProductsList from "./ProductsList";
 
 function App() {
   return (
-    <>
-      <GroceriesAppContainer products={products} />
-    </>
+    <div style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>
+      <h1 style={{ textAlign: "center" }}>Grocery App V2</h1>
+      <ProductsList />
+    </div>
   );
 }
 
